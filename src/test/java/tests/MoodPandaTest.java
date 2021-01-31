@@ -31,6 +31,6 @@ public class MoodPandaTest extends BaseTest{
                 .clickToHug()
                 .waitForHug();
         Assert.assertEquals(feedPage.getMoodLevel(), EXPECTED_MOOD_LEVEL);
-        Assert.assertEquals(rateYourHappiness.getHugQuantity(), EXPECTED_HUGS_QUANTITY);
+        Assert.assertEquals(feedPage.getHugQuantity(), EXPECTED_HUGS_QUANTITY);
     }
 }

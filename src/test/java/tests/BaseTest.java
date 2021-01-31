@@ -1,19 +1,19 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
-import constants.Constants;
+import locators_constants.Constants;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.FeedPage;
 import pages.LoginPage;
-import pages.RateYourHappiness;
+import pages.RateYourHappinessModal;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class BaseTest implements Constants {
     LoginPage loginPage;
     FeedPage feedPage;
-    RateYourHappiness rateYourHappiness;
+    RateYourHappinessModal rateYourHappiness;
 
     @BeforeMethod
     public void setUp(){
@@ -22,7 +22,7 @@ public class BaseTest implements Constants {
         Configuration.timeout = 15000;
         loginPage = new LoginPage();
         feedPage = new FeedPage();
-        rateYourHappiness = new RateYourHappiness();
+        rateYourHappiness = new RateYourHappinessModal();
     }
     @AfterMethod
     public void closeBrowser(){

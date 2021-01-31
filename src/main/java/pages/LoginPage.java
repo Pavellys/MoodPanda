@@ -1,7 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
-import constants.LoginConstants;
+import locators_constants.LoginConstants;
 import java.time.Duration;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.url;
@@ -28,5 +28,4 @@ public class LoginPage implements LoginConstants {
     public String getCurrentURL(){
         return url();
     }
-
 }
