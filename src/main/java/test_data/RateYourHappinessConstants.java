@@ -1,4 +1,4 @@
-package locators_constants;
+package test_data;
 
 public interface RateYourHappinessConstants {
     String SLIDER_CSS = ".ui-slider-handle";

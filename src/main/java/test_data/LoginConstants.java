@@ -1,4 +1,4 @@
-package locators_constants;
+package test_data;
 
 public interface LoginConstants {
     String EMAIL_INPUT_CSS = "#ContentPlaceHolderContent_TextBoxEmail";

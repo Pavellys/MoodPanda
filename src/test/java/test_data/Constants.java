@@ -1,4 +1,4 @@
-package locators_constants;
+package test_data;
 
 public interface Constants {
     String USER_EMAIL = "dkwr2@yandex.ru";

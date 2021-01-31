@@ -25,11 +25,10 @@ public class MoodPandaTest extends BaseTest{
                 .waitForFeedPageOpened()
                 .clickOnUpdateMoodButton()
                 .updateMood(7, MOOD_MESSAGE)
-                .description(MOOD_MESSAGE)
                 .clickToButtonUpdateRate()
                 .clickMyDiaryButton()
                 .clickToHug()
-                .waitForHug();
+                .waitForHug("1");
         Assert.assertEquals(feedPage.getMoodLevel(), EXPECTED_MOOD_LEVEL);
         Assert.assertEquals(feedPage.getHugQuantity(), EXPECTED_HUGS_QUANTITY);
     }

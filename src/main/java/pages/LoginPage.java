@@ -1,7 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
-import locators_constants.LoginConstants;
+import test_data.LoginConstants;
 import java.time.Duration;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.url;

@@ -1,7 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
-import locators_constants.FeedConstants;
+import test_data.FeedConstants;
 import java.time.Duration;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
@@ -27,8 +27,8 @@ public class FeedPage implements FeedConstants {
         return this;
     }
 
-    public FeedPage waitForHug(){
-        $(byXpath(HUGS_QUANTITY)).shouldHave(Condition.exactText("1"));
+    public FeedPage waitForHug(String hugQuantity){
+        $(byXpath(HUGS_QUANTITY)).shouldHave(Condition.exactText(hugQuantity));
         return this;
     }
 
